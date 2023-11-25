@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package="./;pb";
+package pb;
+
+message DBItem {
+	int32 id = 1;
+	int32 num = 2;
+}
+
+message DBBag {
+	repeated DBItem items = 1;
+}

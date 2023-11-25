@@ -1,0 +1,104 @@
+syntax = "proto3";
+
+option go_package="./;pb";
+package pb;
+
+
+message PBNetMsg {
+	string proto = 1;
+	bytes payload = 2;
+	int32 session = 3;
+}
+
+message PBLoginReq {
+	string account = 1;
+	string password = 2;
+}
+
+message PBLoginRsp {
+	int64 uid = 1;
+	string name = 2;
+	int32 sceneId = 3;
+	repeated PBItem items = 4;
+}
+
+message PBEnterSceneReq {
+
+}
+
+message SceneObject {
+	int32 objId = 1;
+	int32 type = 2;
+	int32 hp = 3;
+	int32 maxHp = 4;
+	int32 mp = 5;
+	int32 maxMp = 6;
+	float positionX = 7;
+	float positionY = 8;
+	float positionZ = 9;
+	int32 level = 10;
+}
+
+message PBEnterSceneRsp {
+	repeated SceneObject sceneObjects = 1;
+	SceneObject self = 2;
+}
+
+message PBEnterSceneNotify {
+	SceneObject object = 1;
+}
+
+message PBAttackReq {
+	int32 objId =1;
+}
+
+message PBAttackRsp {
+	int32 AttackObjId =1;
+	int32 AttackedObjId =2;
+	int32 damage = 3;
+}
+
+message PBAttackNotify {
+	int32 AttackObjId =1;
+	int32 AttackedObjId =2;
+	int32 damage = 3;
+}
+
+message PBObjectDieNotify {
+	int32 objId = 1;
+}
+
+message PBMoveReq {
+	float positionX = 1;
+	float positionY = 2;
+	float positionZ = 3;
+	float speed = 4;
+}
+
+message PBMoveNotify {
+	int32 objId = 1;
+	float positionX = 2;
+	float positionY = 3;
+	float positionZ = 4;
+	float speed = 5;
+}
+
+message PBSyncPositionReq {
+	float positionX = 1;
+	float positionY = 2;
+	float positionZ = 3;
+}
+
+message PBItem {
+	int32 itemId = 1;
+	int32 count = 2;
+}
+
+message PBUseItemReq {
+	int32 itemId = 1;
+	int32 count = 2;
+}
+
+message PBUseItemRsp {
+	repeated PBItem items = 1;
+}

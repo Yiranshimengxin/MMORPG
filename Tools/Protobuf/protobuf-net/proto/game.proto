@@ -1,0 +1,11 @@
+syntax="proto3";
+
+
+message PRO_USER{
+	int32 user_id = 1;
+	int32 last_login_ts = 2;
+}
+
+message GameData{
+	PRO_USER user = 1;
+}
