@@ -7,3 +7,9 @@
 客户端主要是Manager文件夹里的NetworkManager.cs。
 
 ——2023.11.25
+
+
+
+完成了main.go，config.go，db.go，config.yml的编写。
+
+——2023.12.1

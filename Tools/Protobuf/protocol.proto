@@ -3,11 +3,11 @@ syntax = "proto3";
 option go_package="./;pb";
 package pb;
 
-
+//定义协议包装体
 message PBNetMsg {
-	string proto = 1;
-	bytes payload = 2;
-	int32 session = 3;
+	string proto = 1;  //发送消息协议的名字
+	bytes payload = 2;  //协议里具体对应消息的结构，对应的协议名字的结构
+	int32 session = 3;  //RPC调用时的唯一ID
 }
 
 message PBLoginReq {
