@@ -1,13 +1,15 @@
-package Server
+package main
 
 import (
-	"Server/config"
-	"Server/gate"
 	"flag"
 	"fmt"
+	"game/config"
+	"game/gate"
+	"game/world"
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 )
 
 var (
@@ -27,7 +29,7 @@ func main() {
 
 	signal.Notify(SigChan, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 
-	//logicTicker := time.NewTicker(66 * time.Millisecond)
+	logicTicker := time.NewTicker(66 * time.Millisecond)
 	closeChan = make(chan struct{})
 	exitChan := make(chan struct{})
 	go func() {
@@ -38,22 +40,23 @@ func main() {
 		gs := gate.NewGate()
 		go gs.Run()
 
-		//w:=world.NewWorld
-		//w.Init()
+		w := world.NewWorld()
+		w.Init()
 
 		for {
 			select {
+
 			case <-closeChan:
 				goto QUIT
 			case sig := <-SigChan:
 				fmt.Printf("收到信号:%v\n", sig)
 				close(closeChan)
-				//case<-logicTicker.C:
-				//	w.Update()
-				//case client:=<-gs.AcceptChan:
-				//	w.OnAccpet(client)
-				//case client:=<-gs.CloseChan:
-				//	w.OnClose(client)
+			case <-logicTicker.C:
+				w.Update()
+			case client := <-gs.AcceptChan:
+				w.OnAccept(client)
+			case client := <-gs.CloseChan:
+				w.OnClose(client)
 			}
 		}
 

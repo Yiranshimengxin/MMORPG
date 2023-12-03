@@ -1,9 +1,10 @@
 package gate
 
 import (
-	"Server/network"
-	"Server/pb"
 	"fmt"
+	"game/game"
+	"game/network"
+	"game/pb"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -19,14 +20,15 @@ func NewClient(conn *network.Connection) *Client {
 
 // Client 客户端
 type Client struct {
-	conn *network.Connection
-	//player *game.Player
+	conn    *network.Connection
+	player  *game.Player
 	handler MsgHandler
 }
 
-//func (c* Client) AttachPlayer(p *game.Player){
-//	c.player=p
-//}
+// AttachPlayer 场景里的玩家和网络的实例进行绑定
+func (c *Client) AttachPlayer(p *game.Player) {
+	c.player = p
+}
 
 // GetFD 获取客户端连接的文件描述符
 func (c *Client) GetFD() uint64 {
@@ -87,4 +89,8 @@ func (c *Client) onRequest(pkg network.Packet) bool {
 		fmt.Println("msg handler is nil")
 		return true
 	}
+}
+
+func (c *Client) GetPlayer() *game.Player {
+	return c.player
 }

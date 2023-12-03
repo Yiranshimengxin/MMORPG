@@ -12,7 +12,7 @@ public class GameManager : BaseMgr<GameManager>
     }
 
 
-    // ¼ÓÔØ³¡¾°£¬²¢´´½¨object
+    // ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½object
     public void LoadGameScene()
     {
         ResMgr.Instance.LoadCustomScene("Village", () => {

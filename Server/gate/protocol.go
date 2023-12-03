@@ -1,9 +1,9 @@
 package gate
 
 import (
-	"Server/network"
 	"encoding/binary"
 	"errors"
+	"game/network"
 	"google.golang.org/protobuf/proto"
 	"io"
 )

@@ -1,9 +1,9 @@
 package gate
 
 import (
-	"Server/config"
-	"Server/network"
 	"fmt"
+	"game/config"
+	"game/network"
 	"net"
 	"sync"
 	"sync/atomic"
@@ -23,13 +23,12 @@ type Gate struct {
 	clientId   uint64       //客户端ID
 	usersFD    sync.Map     //客户端连接
 	AcceptChan chan *Client //接收客户端
-	CloseChan  chan *Client
+	CloseChan  chan *Client //关闭客户端
 }
 
 // Run 运行服务器
 func (g *Gate) Run() {
 	l, e := net.Listen("tcp", config.ConfigData.App.Host)
-	//l, e := net.Listen("tcp", ":10087")
 	if e != nil {
 		panic(e.Error())
 	}

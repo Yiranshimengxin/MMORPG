@@ -28,7 +28,7 @@ var ConfigData Config
 func LoadConfig(file string) bool {
 	data, err := os.ReadFile(file)
 	if err != nil {
-		panic(fmt.Sprintf("config path error %v", err))
+		panic(fmt.Sprintf("config path error: %v", err))
 	}
 
 	err = yaml.Unmarshal(data, &ConfigData)

@@ -13,3 +13,9 @@
 完成了main.go，config.go，db.go，config.yml的编写。
 
 ——2023.12.1
+
+
+
+进行了main.go和world.go的Debug，修正了服务器端启动报错的bug。
+
+——2023.12.3
