@@ -12,7 +12,7 @@ namespace RPG.Stats
         private void Update() {
             if (Input.GetKey(KeyCode.E))
             {
-                GainExperience(Time.deltaTime * 1000);
+                //GainExperience(Time.deltaTime * 1000);
             }
         }
 

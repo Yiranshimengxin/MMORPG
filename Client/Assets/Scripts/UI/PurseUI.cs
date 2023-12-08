@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 
 namespace RPG.UI
 {
-    public class PurseUI : MonoBehaviour {
+    public class PurseUI : MonoBehaviour
+    {
         [SerializeField] TextMeshProUGUI balanceField;
 
         Purse playerPurse = null;
 
-        private void Start() {
+        private void Start()
+        {
             //playerPurse = GameObject.FindGameObjectWithTag("Player").GetComponent<Purse>();
 
             //if (playerPurse != null)
@@ -41,6 +43,10 @@ namespace RPG.UI
         {
             balanceField.text = $"${playerPurse.GetBalance():N2}";
         }
-        
+
+        private void Update()
+        {
+            balanceField.text = $"${BagMgr.Instance.GetMoney():N2}";
+        }
     }
 }

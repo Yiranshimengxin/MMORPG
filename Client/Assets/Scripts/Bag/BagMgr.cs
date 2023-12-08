@@ -6,6 +6,9 @@ public class BagMgr : BaseMgr<BagMgr>
 {
     private Dictionary<int, Pb.PBItem> mItems = new Dictionary<int, Pb.PBItem>();
 
+    //定义金钱
+    private long mMoney;
+
     public void InitItem(List<Pb.PBItem> items)
     {
         for (int i = 0; i < items.Count; i++)
@@ -41,5 +44,18 @@ public class BagMgr : BaseMgr<BagMgr>
         }
 
         return pBItems;
+    }
+
+    public void SetMoney(long money)
+    {
+        if(money!=mMoney)
+        {
+            mMoney = money;
+        }
+    }
+
+    public long GetMoney()
+    {
+        return mMoney;
     }
 }

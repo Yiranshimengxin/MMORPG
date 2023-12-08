@@ -1,5 +1,5 @@
 
-À
+×
 protocol.protopb"T
 PBNetMsg
 proto (	Rproto
@@ -8,14 +8,15 @@
 
 PBLoginReq
 account (	Raccount
-password (	Rpassword"n
+password (	Rpassword"„
 
 PBLoginRsp
 uid (Ruid
 name (	Rname
 sceneId (RsceneId 
 items (2
-.pb.PBItemRitems"
+.pb.PBItemRitems
+money (Rmoney"
 PBEnterSceneReq"ó
 SceneObject
 objId (RobjId

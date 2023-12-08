@@ -60,6 +60,10 @@ func (p *Player) GetID() int32 {
 	return p.ID
 }
 
+func (p *Player) GetDB() *db.User {
+	return p.db
+}
+
 // GetType 获取类型
 func (p *Player) GetType() int32 {
 	return p.ObjType

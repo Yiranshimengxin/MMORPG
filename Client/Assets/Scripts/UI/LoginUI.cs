@@ -9,9 +9,12 @@ using System.Drawing;
 using System.IO;
 using System;
 using Pb;
+using UnityEngine.UI;
 
 public class LoginUI : MonoBehaviour
 {
+    public InputField account;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,8 @@ public class LoginUI : MonoBehaviour
     private void OnConnectServer(byte[] bytes)
     {
         Pb.PBLoginReq req = new Pb.PBLoginReq();
-        req.Account = "test";
+        //req.Account = "test";
+        req.Account = account.text;
         NetMsgDispatcher.GetInstance().SendMessage<Pb.PBLoginReq>("PBLoginReq", req, async (buffers) =>
         {
             MemoryStream ms = new MemoryStream(buffers, 0, buffers.Length);
@@ -47,6 +51,7 @@ public class LoginUI : MonoBehaviour
 
             Pb.PBLoginRsp rsp = ret as Pb.PBLoginRsp;
             BagMgr.Instance.InitItem(rsp.Items);
+            BagMgr.Instance.SetMoney(rsp.Money);
             //ResMgr.Instance.LoadGameScene();
             GameManager.Instance.LoadGameScene();
         });

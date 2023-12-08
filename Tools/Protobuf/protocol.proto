@@ -20,6 +20,7 @@ message PBLoginRsp {
 	string name = 2;
 	int32 sceneId = 3;
 	repeated PBItem items = 4;
+	int64 money = 5;
 }
 
 message PBEnterSceneReq {
