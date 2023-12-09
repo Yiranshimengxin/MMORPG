@@ -37,7 +37,7 @@ namespace GameCore
         //{
         //}
 
-        // ´´½¨Íæ¼Ò×Ô¼º
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
         public void LoadMainPlayer(Pb.SceneObject sceneObject)
         {
             AttCharactor attr = new AttCharactor();
@@ -75,14 +75,14 @@ namespace GameCore
                 {
 
                 }
-                else if (sceneObject.Type == (int) eEntityType.ENEMY)
+                else if (sceneObject.Type == (int)eEntityType.ENEMY)
                 {
                     LoadEnemies(sceneObject);
                 }
             }
         }
 
-        // ´´½¨ÆäËüÍæ¼Ò
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public void LoadPlayer(Pb.SceneObject objectPlayer)
         {
             AttCharactor attr = new AttCharactor();
@@ -100,17 +100,17 @@ namespace GameCore
             player.GetRootGameObject().GetComponent<Health>().RestoreHp(objectPlayer.Hp);
         }
 
-        // ´´½¨¹ÖÎï
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public void LoadEnemies(Pb.SceneObject objectEnemy)
         {
             AttCharactor attr = new AttCharactor();
             attr.id = objectEnemy.objId;
-            attr.name = "¹ÖÎï";
+            attr.name = "ï¿½ï¿½ï¿½ï¿½";
             attr.position = new Vector3(objectEnemy.positionX, objectEnemy.positionY, objectEnemy.positionZ);
             attr.forward = Quaternion.Euler(0, 0, 0) * Vector3.forward;
             attr.scale = UnityEngine.Vector3.one;
             attr.hp = objectEnemy.Hp;
-            attr.maxHp= objectEnemy.maxHp;
+            attr.maxHp = objectEnemy.maxHp;
 
             EntityEnemy enemy = (EntityEnemy)EntityManager.Instance.CreateEntityByAtt(eEntityType.ENEMY, attr.id, attr);
             enemy.GetRootGameObject().GetComponent<Health>().RestoreHp(objectEnemy.Hp);

@@ -45,10 +45,10 @@ func (c *Client) onClose() {
 }
 
 // Send 发送消息
-func (c *Client) Send(name string, seesion int32, msg interface{}) {
+func (c *Client) Send(name string, session int32, msg interface{}) {
 	pbNetMsg := &pb.PBNetMsg{
 		Proto:   name,
-		Session: seesion,
+		Session: session,
 	}
 
 	switch v := msg.(type) {
@@ -68,16 +68,16 @@ func (c *Client) Send(name string, seesion int32, msg interface{}) {
 	err := c.conn.AsyncWritePacket(retPack, 0)
 	if err != nil {
 		c.conn.Close()
-		fmt.Printf("gate user send msg:%v", err)
+		fmt.Printf("gate user send msg:%v\n", err)
 		return
 	}
 }
 
 // onRequest 客户端请求
 func (c *Client) onRequest(pkg network.Packet) bool {
-	pakcet, _ := pkg.(*Packet)
+	packet, _ := pkg.(*Packet)
 	pbNetMsg := &pb.PBNetMsg{}
-	err := pakcet.UnmarshalPB(pbNetMsg)
+	err := packet.UnmarshalPB(pbNetMsg)
 	if err != nil {
 		return false
 	}

@@ -48,7 +48,7 @@ public class BagMgr : BaseMgr<BagMgr>
 
     public void SetMoney(long money)
     {
-        if(money!=mMoney)
+        if (money != mMoney)
         {
             mMoney = money;
         }

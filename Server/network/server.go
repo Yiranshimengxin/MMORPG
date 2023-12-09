@@ -33,7 +33,6 @@ func (s *Server) Start(listener net.Listener, create ConnectionCreator) {
 	defer func() {
 		s.waitGroup.Done()
 	}()
-
 	for {
 		select {
 		case <-s.exitChan:
@@ -42,12 +41,10 @@ func (s *Server) Start(listener net.Listener, create ConnectionCreator) {
 		default:
 		}
 
-		//accept new connection from client
 		conn, err := listener.Accept()
 		if err != nil {
 			continue
 		}
-
 		s.waitGroup.Add(1)
 		go func() {
 			create(conn, s).Do()

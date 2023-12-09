@@ -19,7 +19,7 @@ func NewGate() *Gate {
 
 // Gate 服务器
 type Gate struct {
-	listenr    net.Listener //监听器
+	listener   net.Listener //监听器
 	clientId   uint64       //客户端ID
 	usersFD    sync.Map     //客户端连接
 	AcceptChan chan *Client //接收客户端
@@ -32,7 +32,7 @@ func (g *Gate) Run() {
 	if e != nil {
 		panic(e.Error())
 	}
-	g.listenr = l
+	g.listener = l
 
 	//启动网络服务器，接受客户端连接
 	server := network.NewServer(g, &MsgProtocol{})
@@ -43,7 +43,7 @@ func (g *Gate) Run() {
 
 // Stop 停止服务器
 func (g *Gate) Stop() {
-	err := g.listenr.Close()
+	err := g.listener.Close()
 	if err != nil {
 		panic(err.Error())
 		return
@@ -74,12 +74,12 @@ func (g *Gate) OnClose(conn *network.Connection) {
 	}
 	u := value.(*Client)
 	u.onClose()
-	g.usersFD.Delete(conn.SetFD)
+	g.usersFD.Delete(conn.GetFD())
 }
 
 // OnMessage 客户端消息
-func (g *Gate) OnMessage(conn *network.Connection, pkg network.Packet) bool {
-	fd := conn.GetFD()
+func (g *Gate) OnMessage(coon *network.Connection, pkg network.Packet) bool {
+	fd := coon.GetFD()
 	value, ok := g.usersFD.Load(fd)
 	if ok {
 		u := value.(*Client)
@@ -87,7 +87,6 @@ func (g *Gate) OnMessage(conn *network.Connection, pkg network.Packet) bool {
 	} else {
 		fmt.Println("GateWork on message handshake error")
 	}
-
 	return true
 }
 

@@ -45,13 +45,13 @@ func (dp *DefaultProtocol) ReadPacket(r io.Reader) (Packet, error) {
 		lengthBytes []byte = make([]byte, 4)
 		length      uint32
 	)
-
 	//read length
 	if _, err := io.ReadFull(r, lengthBytes); err != nil {
 		return nil, err
 	}
 	if length = binary.BigEndian.Uint32(lengthBytes); length > 1024 {
-		return nil, errors.New("the size of packet is larger than the lismit")
+		return nil, errors.New("the size of packet is larger than thre limit")
+
 	}
 
 	buff := make([]byte, length)
@@ -62,5 +62,4 @@ func (dp *DefaultProtocol) ReadPacket(r io.Reader) (Packet, error) {
 	}
 
 	return NewDefaultPacket(buff), nil
-
 }

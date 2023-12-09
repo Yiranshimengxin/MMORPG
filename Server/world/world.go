@@ -96,8 +96,8 @@ func (w *World) HandleMsg(c *gate.Client, session int32, name string, data []byt
 		w.OnMove(c, session, data)
 	//case "PBUseItemReq":
 	//	w.OnUseItem(c, session, data)
-	case "PBSyncPositionReq":
-		w.OnSyncPosition(c, session, data)
+	//case "PBSyncPositionReq":
+	//	w.OnSyncPosition(c, session, data)
 	default:
 		fmt.Println("not find msg %s handler", name)
 	}
@@ -112,56 +112,56 @@ func (w *World) OnLogin(c *gate.Client, session int32, data []byte) {
 		return
 	}
 
-	// 判断账号是不是为空
+	//判断账号是不是为空
 	if req.GetAccount() == "" {
-		fmt.Println("account is nil")
+		fmt.Println("account is empty")
 		return
 	}
 
 	register := false
 	dbUser := &db.User{}
 	var userId int64
-
-	// 判断有没有此账号，没有则新注册一个
-	rows := w.dbMySql.QueryRow("select * from account where account = ?", req.GetAccount())
+	//判断有没有此账号，没有则新注册一个
+	rows := w.dbMySql.QueryRow("select * from account where account =?", req.GetAccount())
 	var ac db.Account
 	err = rows.Scan(&ac.Account, &ac.Uid)
 	if errors.Is(err, sql.ErrNoRows) {
 		var maxId int64
-		w.dbMySql.QueryRow("select * from user id").Scan(&maxId)
+		w.dbMySql.QueryRow("select * from user_id").Scan(&maxId)
 		userId = maxId + 1
-		w.dbMySql.Exec("update user id set max_id = ?", userId)
+		w.dbMySql.Exec("update user_id set max_id= ?", userId)
 
-		// 插入account与id映射
-		_, err := w.dbMySql.Exec("insert into account(account,uid) values(?,?)", req.GetAccount(), userId)
+		//插入account 与 id 映射
+		_, err = w.dbMySql.Exec("insert into account(account,uid) values(?,?)", req.GetAccount(), userId)
 		if err != nil {
 			fmt.Println(err.Error())
 			return
 		}
-		// 如果找到了账号Uid，就先查询user表里有没有
 	} else {
-		uRows := w.dbMySql.QueryRow("select * from user where uid = ?", ac.Uid)
-		err = uRows.Scan(&dbUser.Uid, &dbUser.Name, &dbUser.CreateTime, &dbUser.LastLoginTime, &dbUser.LastLogoutTime, &dbUser.Exp, &dbUser.Level, &dbUser.PositionY, &dbUser.PositionY, &dbUser.PositionZ, &dbUser.Money, &dbUser.KillNum, &dbUser.DeadNum)
+		uRows := w.dbMySql.QueryRow("select  * from user where uid = ?", ac.Uid)
+		err = uRows.Scan(&dbUser.Uid, &dbUser.Name, &dbUser.CreateTime, &dbUser.LastLoginTime, &dbUser.LastLogoutTime, &dbUser.Exp, &dbUser.Level, &dbUser.PositionX,
+			&dbUser.PositionY, &dbUser.PositionZ, &dbUser.Money, &dbUser.KillNum, &dbUser.DeathNum)
 
+		userId = ac.Uid
 		if errors.Is(err, sql.ErrNoRows) {
-			// 插入user到db
+			//插入user 到db
 			dbUser.Uid = userId
 			dbUser.Name = req.GetAccount()
 			dbUser.CreateTime = time.Now().Unix()
 			dbUser.LastLoginTime = time.Now().Unix()
-			_, err = w.dbMySql.Exec("insert into user(uid,name,createTime,lastLoginTime,lastLogoutTime,exp,level,positionX,positionY,positionZ,money,killNum,deadNum) values(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+			_, err = w.dbMySql.Exec("insert into user(uid,name,createTime,lastLoginTime,lastLogoutTime,exp,level,positionX,positionY,positionZ,money,killNum,deadNum)"+
+				"values (?,?,?,?,?,?,?,?,?,?,?,?,?)",
 				dbUser.Uid, dbUser.Name, dbUser.CreateTime, dbUser.LastLoginTime, dbUser.LastLogoutTime, 0, 1, 0, 0, 0, 0, 0, 0)
 			if err != nil {
 				fmt.Println(err.Error())
 				return
 			}
-
 			//插入背包数据
-			_, err = w.dbMySql.Exec("insert into bag(uid,data) values (?,?)", dbUser.Uid, []byte{})
-			if err != nil {
-				fmt.Println(err.Error())
-				return
-			}
+			//_, err = w.dbMySql.Exec("insert into bag(uid,data) values (?,?)", dbUser.Uid, []byte{})
+			//if err != nil {
+			//	fmt.Println(err.Error())
+			//	return
+			//}
 			register = true
 		}
 	}

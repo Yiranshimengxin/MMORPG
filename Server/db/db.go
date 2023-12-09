@@ -20,7 +20,7 @@ type User struct {
 	PositionZ      float32 //位置
 	Money          int64   //金钱
 	KillNum        int32   //杀敌数
-	DeadNum        int32   //死亡数
+	DeathNum       int32   //死亡数
 }
 
 // Item 物品

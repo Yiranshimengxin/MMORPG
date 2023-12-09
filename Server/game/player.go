@@ -107,7 +107,7 @@ func (p *Player) IsDead() bool {
 }
 
 // OnHit 被攻击
-// 伤害计算公式：伤害=攻击力 /（1+防御力/攻击力）
+// 伤害计算公式：伤害=攻击力/（1+防御力/攻击力）
 func (p *Player) OnHit(attack entity.Entity, cb entity.AttackCallback) {
 	damage := attack.GetDamage() / (1 + p.Defence/attack.GetDamage())
 	p.Hp -= damage
@@ -120,7 +120,7 @@ func (p *Player) OnHit(attack entity.Entity, cb entity.AttackCallback) {
 // Dead 是否死亡
 func (p *Player) Dead(killer entity.Entity) {
 	p.Hp = 0
-	p.db.DeadNum++
+	p.db.DeathNum++
 	p.SetDirty()
 }
 
@@ -154,8 +154,8 @@ func (p *Player) Save() {
 	p.db.PositionZ = p.PositionZ
 	p.db.Level = p.Level
 
-	_, err := p.dbMySql.Exec("update user set lastLogoutTime=?,lastLoginTime=?,exp=?,level=?,positionX=?,positionY=?,positionZ=?,money=?,killNum=?,deadNum=?"+"where uid=?",
-		p.db.LastLogoutTime, p.db.LastLoginTime, p.db.Exp, p.db.Level, p.db.PositionX, p.db.PositionY, p.db.PositionZ, p.db.Money, p.db.KillNum, p.db.DeadNum, p.db.Uid)
+	_, err := p.dbMySql.Exec("update user set lastLogoutTime=?,lastLoginTime=?,exp=?,level=?,positionX=?,positionY=?,positionZ=?,money=?,killNum=?,deadNum=? "+"where uid= ?",
+		p.db.LastLogoutTime, p.db.LastLoginTime, p.db.Exp, p.db.Level, p.db.PositionX, p.db.PositionY, p.db.PositionZ, p.db.Money, p.db.KillNum, p.db.DeathNum, p.db.Uid)
 	if err != nil {
 		fmt.Println(err.Error())
 		return

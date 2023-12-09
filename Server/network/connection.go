@@ -149,9 +149,11 @@ func (c *Connection) Do() {
 	if !c.callback.OnConnect(c) {
 		return
 	}
+
 	asyncDo(c.handleLoop, c.server.waitGroup)
 	asyncDo(c.readLoop, c.server.waitGroup)
 	asyncDo(c.writeLoop, c.server.waitGroup)
+
 }
 
 func (c *Connection) readLoop() {
