@@ -55,8 +55,8 @@ func (w *World) Init() {
 func (w *World) LoadMap() {
 	//create monster
 	for i := 0; i < 1; i++ {
-		//monster := entity.NewMonster(w.createObjectId(), 100, 100, 100, 0, 0, 0)
-		//w.entities[monster.GetID()] = monster
+		monster := entity.NewMonster(w.CreateObjectId(), 100, 100, 100, 0, 0, 0)
+		w.entities[monster.GetID()] = monster
 	}
 }
 
@@ -92,12 +92,12 @@ func (w *World) HandleMsg(c *gate.Client, session int32, name string, data []byt
 		w.OnPlayerEnter(c, session, data)
 	//case "PBAttackReq":
 	//	w.OnAttack(c, session, data)
-	//case "PBMoveReq":
-	//	w.OnMove(c, session, data)
+	case "PBMoveReq":
+		w.OnMove(c, session, data)
 	//case "PBUseItemReq":
 	//	w.OnUseItem(c, session, data)
-	//case "PBSyncPositionReq":
-	//	w.OnSyncPosition(c, session, data)
+	case "PBSyncPositionReq":
+		w.OnSyncPosition(c, session, data)
 	default:
 		fmt.Println("not find msg %s handler", name)
 	}
@@ -236,6 +236,27 @@ func (w *World) OnMove(c *gate.Client, session int32, data []byte) {
 		fmt.Println(err.Error())
 		return
 	}
+
+	c.GetPlayer().SetPosition(req.GetPositionX(), req.GetPositionY(), req.GetPositionZ())
+
+	notify := &pb.PBMoveNotify{}
+	notify.ObjId = c.GetPlayer().GetID()
+	notify.PositionX = req.GetPositionX()
+	notify.PositionY = req.GetPositionY()
+	notify.PositionZ = req.GetPositionZ()
+	notify.Speed = req.GetSpeed()
+	w.Broadcast("PBMoveNotify", notify, c.GetPlayer().GetID())
+}
+
+func (w *World) OnSyncPosition(c *gate.Client, session int32, data []byte) {
+	req := &pb.PBSyncPositionReq{}
+	err := proto.Unmarshal(data, req)
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+
+	c.GetPlayer().SetPosition(req.GetPositionX(), req.GetPositionY(), req.GetPositionZ())
 }
 
 // OnAttack 玩家攻击

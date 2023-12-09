@@ -107,7 +107,7 @@ func (p *Player) IsDead() bool {
 }
 
 // OnHit 被攻击
-// 伤害计算公式：伤害=攻击力/（1+防御力/攻击力）
+// 伤害计算公式：伤害=攻击力 /（1+防御力/攻击力）
 func (p *Player) OnHit(attack entity.Entity, cb entity.AttackCallback) {
 	damage := attack.GetDamage() / (1 + p.Defence/attack.GetDamage())
 	p.Hp -= damage
