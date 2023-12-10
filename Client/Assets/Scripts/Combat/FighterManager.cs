@@ -2,6 +2,7 @@ using GameCore.Entitys;
 using Pb;
 using RPG.Attributes;
 using RPG.Movement;
+using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,7 @@ public class FighterManager : BaseMgr<FighterManager>
         NetMsgDispatcher.GetInstance().RegisterMsgHandler("PBAttackNotify", OnDamage);
         NetMsgDispatcher.GetInstance().RegisterMsgHandler("PBObjectDieNotify", OnDead);
         NetMsgDispatcher.GetInstance().RegisterMsgHandler("PBMoveNotify", OnMove);
+        NetMsgDispatcher.GetInstance().RegisterMsgHandler("PBUpdateResourceNotify", OnUpdateResource);
     }
 
 
@@ -24,14 +26,14 @@ public class FighterManager : BaseMgr<FighterManager>
         var ret = ProtoBuf.Meta.RuntimeTypeModel.Default.Deserialize(netMs, null, typeof(PBAttackNotify));
         PBAttackNotify msg = ret as PBAttackNotify;
 
-        // »ñÈ¡±»¹¥»÷Õß
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Entity attacked = EntityManager.Instance.GetEntity(msg.AttackedObjId);
         if (attacked == null)
         {
             return;
         }
 
-        // »ñÈ¡¹¥»÷Õß
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Entity attack = EntityManager.Instance.GetEntity(msg.AttackObjId);
         attacked.GetRootGameObject().GetComponent<Health>().TakeDamage(attack.GetRootGameObject(), msg.Damage);
     }
@@ -63,5 +65,26 @@ public class FighterManager : BaseMgr<FighterManager>
         }
 
         entity.GetRootGameObject().GetComponent<Mover>().StartMoveAction(new Vector3(msg.positionX, msg.positionY, msg.positionZ), msg.Speed);
+    }
+
+    private void OnUpdateResource(byte[] buffers)
+    {
+        MemoryStream netMs = new MemoryStream(buffers, 0, buffers.Length);
+        var ret = ProtoBuf.Meta.RuntimeTypeModel.Default.Deserialize(netMs, null, typeof(PBUpdateResourceNotify));
+        PBUpdateResourceNotify msg = ret as PBUpdateResourceNotify;
+
+        GameObject mainObject = EntityManager.MainPlayer.GetRootGameObject();
+        if (mainObject == null)
+        {
+            return;
+        }
+
+        Experience experience = mainObject.GetComponent<Experience>();
+        if (experience == null)
+        {
+            return;
+        }
+        EntityManager.MainPlayer.AttCharactor.level = msg.Level;
+        experience.GainExperience(msg.Exp);
     }
 }

@@ -162,7 +162,7 @@ func (p *Player) Save() {
 	}
 	p.dirty = false
 
-	p.bag.Save()
+	//p.bag.Save()
 }
 
 func (p *Player) SetDirty() {

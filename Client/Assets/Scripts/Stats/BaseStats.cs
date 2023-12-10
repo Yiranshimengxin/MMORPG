@@ -18,37 +18,40 @@ namespace RPG.Stats
 
         public int objectId;
 
-        private void Awake() {
+        private void Awake()
+        {
             experience = GetComponent<Experience>();
         }
 
-        private void Start() 
+        private void Start()
         {
-            
+
         }
 
-        private void OnEnable() {
+        private void OnEnable()
+        {
             if (experience != null)
             {
                 experience.onExperienceGained += UpdateLevel;
             }
         }
 
-        private void OnDisable() {
+        private void OnDisable()
+        {
             if (experience != null)
             {
                 experience.onExperienceGained -= UpdateLevel;
             }
         }
 
-        private void UpdateLevel() 
+        private void UpdateLevel()
         {
-            //int newLevel = EntityManager.MainPlayer.Level;
-            //if (newLevel > currentLevel)
+            int newLevel = EntityManager.MainPlayer.AttCharactor.level;
+            if (newLevel > currentLevel)
             {
-                currentLevel = 1;
+                currentLevel = newLevel;
                 LevelUpEffect();
-                onLevelUp();
+                //onLevelUp();
             }
         }
 

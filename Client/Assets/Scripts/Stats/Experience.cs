@@ -9,16 +9,14 @@ namespace RPG.Stats
 
         public event Action onExperienceGained;
 
-        private void Update() {
-            if (Input.GetKey(KeyCode.E))
-            {
-                //GainExperience(Time.deltaTime * 1000);
-            }
+        private void Update()
+        {
+
         }
 
         public void GainExperience(float experience)
         {
-            experiencePoints += experience;
+            experiencePoints = experience;
             onExperienceGained();
         }
 

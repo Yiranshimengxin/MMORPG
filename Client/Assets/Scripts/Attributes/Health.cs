@@ -56,7 +56,7 @@ namespace RPG.Attributes
             if(IsDead())
             {
                 OnDead();
-                AwardExperience(instigator);
+                //AwardExperience(instigator);
             } 
             else
             {

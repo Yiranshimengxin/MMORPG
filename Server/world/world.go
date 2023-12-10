@@ -54,8 +54,8 @@ func (w *World) Init() {
 // LoadMap 加载地图，这里是通过地图编辑工具导出地图信息，然后加载到世界中
 func (w *World) LoadMap() {
 	//create monster
-	for i := 0; i < 1; i++ {
-		monster := entity.NewMonster(w.CreateObjectId(), 100, 100, 100, 0, 0, 0)
+	for i := 0; i < 5; i++ {
+		monster := entity.NewMonster(w.CreateObjectId(), 100, 100, 100, (float32)(i), 0, (float32)(i))
 		w.entities[monster.GetID()] = monster
 	}
 }
@@ -90,16 +90,16 @@ func (w *World) HandleMsg(c *gate.Client, session int32, name string, data []byt
 		w.OnLogin(c, session, data)
 	case "PBEnterSceneReq":
 		w.OnPlayerEnter(c, session, data)
-	//case "PBAttackReq":
-	//	w.OnAttack(c, session, data)
+	case "PBAttackReq":
+		w.OnAttack(c, session, data)
 	case "PBMoveReq":
 		w.OnMove(c, session, data)
 	//case "PBUseItemReq":
 	//	w.OnUseItem(c, session, data)
-	//case "PBSyncPositionReq":
-	//	w.OnSyncPosition(c, session, data)
+	case "PBSyncPositionReq":
+		w.OnSyncPosition(c, session, data)
 	default:
-		fmt.Println("not find msg %s handler", name)
+		fmt.Printf("not find msg %s handler\n", name)
 	}
 }
 
@@ -144,13 +144,13 @@ func (w *World) OnLogin(c *gate.Client, session int32, data []byte) {
 
 		userId = ac.Uid
 		if errors.Is(err, sql.ErrNoRows) {
-			//插入user 到db
+			//插入user到db
 			dbUser.Uid = userId
 			dbUser.Name = req.GetAccount()
 			dbUser.CreateTime = time.Now().Unix()
 			dbUser.LastLoginTime = time.Now().Unix()
 			_, err = w.dbMySql.Exec("insert into user(uid,name,createTime,lastLoginTime,lastLogoutTime,exp,level,positionX,positionY,positionZ,money,killNum,deadNum)"+
-				"values (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+				" values (?,?,?,?,?,?,?,?,?,?,?,?,?)",
 				dbUser.Uid, dbUser.Name, dbUser.CreateTime, dbUser.LastLoginTime, dbUser.LastLogoutTime, 0, 1, 0, 0, 0, 0, 0, 0)
 			if err != nil {
 				fmt.Println(err.Error())
@@ -261,18 +261,48 @@ func (w *World) OnSyncPosition(c *gate.Client, session int32, data []byte) {
 
 // OnAttack 玩家攻击
 func (w *World) OnAttack(c *gate.Client, session int32, data []byte) {
-	req := &pb.PBMoveReq{}
+	req := &pb.PBAttackReq{}
 	err := proto.Unmarshal(data, req)
 	if err != nil {
 		fmt.Println(err.Error())
 		return
 	}
 
-	//被攻击者
-	//targetId := req.GetObjId()
-	//target, ok := w.entities[targetId]
-	//if !ok {
-	//	fmt.Printf("not find target %d", targetId)
-	//	return
-	//}
+	// 被攻击者
+	targetId := req.GetObjId()
+	target, ok := w.entities[targetId]
+	if !ok {
+		fmt.Printf("not find target %d", targetId)
+		return
+	}
+
+	// 添加攻击距离检测
+
+	target.OnHit(c.GetPlayer(), func(e entity.Entity, damage int32) {
+		notify := &pb.PBAttackNotify{}
+		notify.AttackObjId = c.GetPlayer().GetID()
+		notify.AttackedObjId = targetId
+		notify.Damage = damage
+		w.Broadcast("PBAttackNotify", notify, 0)
+
+		if e.IsDead() {
+			delete(w.entities, e.GetID())
+			if e.GetType() == entity.ObjectPlayer {
+				delete(w.players, e.(*game.Player).GetUid())
+			}
+
+			c.GetPlayer().AddExp(10)
+			c.GetPlayer().AddMoney(10)
+			update := &pb.PBUpdateResourceNotify{
+				Exp:   c.GetPlayer().GetDB().Exp,
+				Money: c.GetPlayer().GetDB().Money,
+				Level: c.GetPlayer().GetDB().Level,
+			}
+			c.Send("PBUpdateResourceNotify", 0, update)
+
+			notify := &pb.PBObjectDieNotify{}
+			notify.ObjId = e.GetID()
+			w.Broadcast("PBObjectDieNotify", notify, 0)
+		}
+	})
 }

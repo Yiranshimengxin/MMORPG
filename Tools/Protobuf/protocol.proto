@@ -69,6 +69,12 @@ message PBObjectDieNotify {
 	int32 objId = 1;
 }
 
+message PBUpdateResourceNotify{
+	int64 exp = 1;
+	int32 level = 2;
+	int64 money = 3;
+}
+
 message PBMoveReq {
 	float positionX = 1;
 	float positionY = 2;

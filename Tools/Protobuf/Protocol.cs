@@ -206,6 +206,24 @@ namespace Pb
     }
 
     [global::ProtoBuf.ProtoContract()]
+    public partial class PBUpdateResourceNotify : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"exp")]
+        public long Exp { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"level")]
+        public int Level { get; set; }
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"money")]
+        public long Money { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
     public partial class PBMoveReq : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
