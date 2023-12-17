@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class DialogDataRow
 {
     public int Id;
@@ -20,8 +19,8 @@ public class DialogData
     {
         DialogDataRow row1 = new DialogDataRow();
         row1.Id = 10001;
-        row1.Name = "Å©Ãñ";
-        row1.Context = "»¶Ó­À´µ½Õâ¸öÉñÆæÓÎÏ·ÊÀ½ç£¬Äã¿ÉÒÔÔÚÕâÀï×ÔÓÉµÄÌ½Ë÷";
+        row1.Name = "å†œæ°‘";
+        row1.Context = "å°ä¼™å­æˆ‘çœ‹ä½ éª¨éª¼æƒŠå¥‡ï¼Œä½ è¿‡æ¥ä¸€ä¸‹ï¼";
         row1.NpcId = 10001;
         row1.NextId = 10002;
         mData.Add(row1.Id, row1);
@@ -29,15 +28,15 @@ public class DialogData
         DialogDataRow row2 = new DialogDataRow();
         row2.Id = 10002;
         row2.Name = string.Empty;
-        row2.Context = "ÎÒÄÜÔÚÕâÀï×öÊ²Ã´£¿";
+        row2.Context = "å«æˆ‘å¹²ä»€ä¹ˆå•Šï¼Ÿ";
         row2.NpcId = 0;
         row2.NextId = 10003;
         mData.Add(row2.Id, row2);
 
         DialogDataRow row3 = new DialogDataRow();
         row3.Id = 10003;
-        row3.Name = "Å©Ãñ";
-        row3.Context = "Äã¿ÉÒÔÔÚÕâÀïÖÖµØ£¬´ò¹Ö£¬±¼ÅÜ";
+        row3.Name = "å†œæ°‘";
+        row3.Context = "å¿«ç‚¹è¿‡æ¥è‡­å°å­ï¼";
         row3.NpcId = 10001;
         row3.NextId = 10004;
         mData.Add(row3.Id, row3);
@@ -45,7 +44,7 @@ public class DialogData
         DialogDataRow row4 = new DialogDataRow();
         row4.Id = 10004;
         row4.Name = string.Empty;
-        row4.Context = "¸æ´Ç";
+        row4.Context = "ã™ã¿ã¾ã›ã‚“ï¼ï¼ï¼";
         row4.NpcId = 0;
         row4.NextId = -1;
         mData.Add(row4.Id, row4);

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"game/config"
 	"game/gate"
+	"game/table"
 	"game/world"
 	"os"
 	"os/signal"
@@ -25,7 +26,7 @@ func main() {
 	flag.Parse()
 	config.LoadConfig(*cfgPath)
 
-	//table.LoadAllTable()
+	table.LoadAllTable()
 
 	signal.Notify(SigChan, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 

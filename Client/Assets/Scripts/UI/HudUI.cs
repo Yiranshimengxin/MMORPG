@@ -1,4 +1,5 @@
 using GameCore.Entitys;
+using GameDevTV.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,5 +41,10 @@ public class HudUI : MonoBehaviour
         MpText.text = string.Format("{0}/{1}", EntityManager.MainPlayer.AttCharactor.mp, EntityManager.MainPlayer.AttCharactor.maxMp);
 
         Leve.text = string.Format("{0}", EntityManager.MainPlayer.AttCharactor.level);
+    }
+
+    public void OnBagClick()
+    {
+        ShowHideUI.mInstance.ShowBag(true);
     }
 }

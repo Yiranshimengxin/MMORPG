@@ -14,7 +14,7 @@ namespace RPG.Attributes
         void Update()
         {
             float fraction = healthComponent.GetFraction();
-            if (Mathf.Approximately(fraction, 0) ||  Mathf.Approximately(fraction, 1))
+            if (Mathf.Approximately(fraction, 0) || Mathf.Approximately(fraction, 1))
             {
                 rootCanvas.enabled = false;
                 return;

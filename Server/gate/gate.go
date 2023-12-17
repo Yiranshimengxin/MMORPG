@@ -75,6 +75,8 @@ func (g *Gate) OnClose(conn *network.Connection) {
 	u := value.(*Client)
 	u.onClose()
 	g.usersFD.Delete(conn.GetFD())
+
+	g.CloseChan <- u
 }
 
 // OnMessage 客户端消息

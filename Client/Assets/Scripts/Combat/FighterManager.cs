@@ -86,5 +86,12 @@ public class FighterManager : BaseMgr<FighterManager>
         }
         EntityManager.MainPlayer.AttCharactor.level = msg.Level;
         experience.GainExperience(msg.Exp);
+
+        BagMgr.Instance.SetMoney(msg.Money);
+
+        for (int i = 0; i < msg.Items.Count; i++)
+        {
+            BagMgr.Instance.SetItemNum(msg.Items[i].itemId, msg.Items[i].Count);
+        }
     }
 }

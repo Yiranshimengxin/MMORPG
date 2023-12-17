@@ -1,0 +1,1229 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.1f1 (f18e0c1b5784) revision 15830540'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15789 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Unity\2022.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Unity/MMORPG/Client
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+50354
+Successfully changed project path to: C:/Unity/MMORPG/Client
+C:/Unity/MMORPG/Client
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5372] Host "[IP] 192.168.50.173 [Port] 0 [Flags] 2 [Guid] 746935513 [EditorId] 746935513 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-BKPS7C79) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [5372] Host "[IP] 192.168.50.173 [Port] 0 [Flags] 2 [Guid] 746935513 [EditorId] 746935513 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-BKPS7C79) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 31.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
+[Subsystems] Discovering subsystems at path C:/Unity/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity/MMORPG/Client/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   NVIDIA
+    VRAM:     5979 MB
+    Driver:   31.0.15.4633
+Initialize mono
+Mono path[0] = 'C:/Unity/2022.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Unity/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity/2022.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Unity/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013795 seconds.
+- Loaded All Assemblies, in  0.512 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 620 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.063 seconds
+Domain Reload Profiling: 1572ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (206ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1064ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (979ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (772ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.111 seconds
+Refreshing native plugins compatible for Editor in 15.34 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.020 seconds
+Domain Reload Profiling: 2125ms
+	BeginReloadAssembly (190ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (788ms)
+		LoadAssemblies (505ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (375ms)
+			TypeCache.Refresh (349ms)
+				TypeCache.ScanAssembly (326ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1021ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (742ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (38ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (366ms)
+			ProcessInitializeOnLoadMethodAttributes (222ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 20.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2674 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (146.3 KB). Loaded Objects now: 3134.
+Memory consumption went from 128.5 MB to 128.4 MB.
+Total: 12.317900 ms (FindLiveObjects: 0.412300 ms CreateObjectMapping: 0.247600 ms MarkObjects: 11.275300 ms  DeleteObjects: 0.380600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19951.772061 seconds.
+  path: Assets/Asset Packs/SimpleFX/_Demo/Demo.unity
+  artifactKey: Guid(dbe9743d9065a2445a22fa67fa9fdbb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/SimpleFX/_Demo/Demo.unity using Guid(dbe9743d9065a2445a22fa67fa9fdbb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab109f614fba4aee9d8c91a463ad3e95') in 0.108438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Textures/Old Floor Boards/Old Flooring_Normal.png
+  artifactKey: Guid(3b53da68bd7ecb7429073aa92f71b7b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Textures/Old Floor Boards/Old Flooring_Normal.png using Guid(3b53da68bd7ecb7429073aa92f71b7b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2f3116b8e30c0284b1416901cc71ce2b') in 0.106010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Watch Tower.fbx
+  artifactKey: Guid(2d6d837a78637aa449838c8f13e8e138) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Watch Tower.fbx using Guid(2d6d837a78637aa449838c8f13e8e138) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '14cb08065bb9cddbf2f3afc162bd4181') in 0.042242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Wheel Barrow.prefab
+  artifactKey: Guid(eaa52d883b6ece74ab295cf26f627023) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Wheel Barrow.prefab using Guid(eaa52d883b6ece74ab295cf26f627023) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57c54eaf04c3adf84389d8bde3d6d858') in 0.012887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Terrain Textures/Simple Textures/YellowTexture.jpg
+  artifactKey: Guid(c4ce899f8f5d5c948bbaf801c103fb97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Terrain Textures/Simple Textures/YellowTexture.jpg using Guid(c4ce899f8f5d5c948bbaf801c103fb97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ac27b14ebc431a71e069912b6103aabe') in 0.021518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/SimpleSky/_Prefabs/SkyDome.prefab
+  artifactKey: Guid(d0223f77114284b47a0e8b317e71e4dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/SimpleSky/_Prefabs/SkyDome.prefab using Guid(d0223f77114284b47a0e8b317e71e4dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f9eed1b195e4f4525eb4ce14c5280eb8') in 0.010773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_26.png
+  artifactKey: Guid(99b4ff6ea44bbe24691a30e9fcef0693) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_26.png using Guid(99b4ff6ea44bbe24691a30e9fcef0693) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e38163fbd901e2fd80b894a2fe1ae984') in 0.016254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_27.png
+  artifactKey: Guid(f1139c6b43e054f46abe94de0f4aee15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_27.png using Guid(f1139c6b43e054f46abe94de0f4aee15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '532d56022a296c8ec0841d0cfcd6ef88') in 0.018678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Prefab/Simple Bow.prefab
+  artifactKey: Guid(7f105c0c272e6c146b4b41cdc53ea356) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Prefab/Simple Bow.prefab using Guid(7f105c0c272e6c146b4b41cdc53ea356) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'be2f2424b80ad74e454a0cf3744238ce') in 0.017652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Prefabs/LowPoly - Fence B.prefab
+  artifactKey: Guid(b4974e3ae06d3d245a8353b888faed9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Prefabs/LowPoly - Fence B.prefab using Guid(b4974e3ae06d3d245a8353b888faed9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b07a0846bbc9bced63abc90cc860a55') in 0.010832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Rod of Death/Materials and Model/Wood_Normal.mat
+  artifactKey: Guid(3295c0c2c4d77824aa17c15a6f40b20b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Rod of Death/Materials and Model/Wood_Normal.mat using Guid(3295c0c2c4d77824aa17c15a6f40b20b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b84cb8c785fd79c339964b4467e66ea') in 0.026567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset Packs/Synty - Polygon Student Sample/Prefabs/SM_Bld_Hut_01.prefab
+  artifactKey: Guid(5a346deceb21d0c4781e67a70fbcc1f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Synty - Polygon Student Sample/Prefabs/SM_Bld_Hut_01.prefab using Guid(5a346deceb21d0c4781e67a70fbcc1f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '241354064ae900339103f4e0d00d74bc') in 0.012254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/UI/Components/Autolayout Button.prefab
+  artifactKey: Guid(c87921cb17723ed4abcea612c1fdeb01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Game/UI/Components/Autolayout Button.prefab using Guid(c87921cb17723ed4abcea612c1fdeb01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f74480e9e390a1cbc900e7d43eb5661d') in 0.090986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Hoe/Materials and Model/Dirty Old Hoe.mat
+  artifactKey: Guid(0754ff2960a855b4b9535c598af02f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Hoe/Materials and Model/Dirty Old Hoe.mat using Guid(0754ff2960a855b4b9535c598af02f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b26f599befd8002ca78b6d35fe06f1c') in 0.010124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeDead_01.fbx
+  artifactKey: Guid(c7caa12b5f0a5ec4c8a70940a075c43f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeDead_01.fbx using Guid(c7caa12b5f0a5ec4c8a70940a075c43f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '31e8c05687aca47358059d25384b420c') in 0.019862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Mushroom_01.fbx
+  artifactKey: Guid(438d9318161c27f4c9a2c83836511408) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Mushroom_01.fbx using Guid(438d9318161c27f4c9a2c83836511408) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bff508eeb31ce7f91afa59da526743d6') in 0.016305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Materials/PolyAdventureMaterial_04.mat
+  artifactKey: Guid(00716469270036945a8b9251b712d77f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Materials/PolyAdventureMaterial_04.mat using Guid(00716469270036945a8b9251b712d77f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '946c576db79e9e3f1e2833e9bfe510a6') in 0.011300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Bld_Village_Top_01.fbx
+  artifactKey: Guid(0127970aab9f9e04aa6d15e8c8708d05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Bld_Village_Top_01.fbx using Guid(0127970aab9f9e04aa6d15e8c8708d05) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '208ea2ff72e0305397309dec1d7027da') in 0.015470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Prop_RoadSign_01.fbx
+  artifactKey: Guid(80c7d90fd0ccc9f4396dbb6a8e4bfe93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Prop_RoadSign_01.fbx using Guid(80c7d90fd0ccc9f4396dbb6a8e4bfe93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b34010659b768041614df16bfd14f5c') in 0.025626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Rowboat_01.fbx
+  artifactKey: Guid(938703b28b6a1334f90ff8c60afac08f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Rowboat_01.fbx using Guid(938703b28b6a1334f90ff8c60afac08f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4be5705c5c359f9ae1c6500b3493ddf4') in 0.022759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeBirch_02.fbx
+  artifactKey: Guid(9784cbd90e1ae6e4196e9491256c92df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeBirch_02.fbx using Guid(9784cbd90e1ae6e4196e9491256c92df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'db71c2650ef6be2cb3f08fb7833f4839') in 0.022754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Chimney_02.fbx
+  artifactKey: Guid(c9cf27c8b6f815648a2d06ced8735ac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Chimney_02.fbx using Guid(c9cf27c8b6f815648a2d06ced8735ac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eadc634ef65cd29dcee37fb05cd3c40f') in 0.015948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Window_04.fbx
+  artifactKey: Guid(a376f008aaa215543b1f160db868a0c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Window_04.fbx using Guid(a376f008aaa215543b1f160db868a0c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '85c867a7b4510a351b72b35f1850b133') in 0.018255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Chimney_01.fbx
+  artifactKey: Guid(e65bd609e8af4ac44ab109a9a5a21b9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Bld_House_Chimney_01.fbx using Guid(e65bd609e8af4ac44ab109a9a5a21b9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2ca62140f7a88f1c45f4d3bdc708e9d') in 0.021837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Materials/PolyAdventureMaterial_03.mat
+  artifactKey: Guid(d1d9e3123a3b08e479d4c4c423af9442) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Materials/PolyAdventureMaterial_03.mat using Guid(d1d9e3123a3b08e479d4c4c423af9442) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ba32926defff9e82567d259ea7dbc914') in 0.009792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Gravestone_01.fbx
+  artifactKey: Guid(5e48aa20d56b33341ad30f416d3cee82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Gravestone_01.fbx using Guid(5e48aa20d56b33341ad30f416d3cee82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b10ae37bcb30ef874c6f7a811a3bf380') in 0.016745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Tree_04.fbx
+  artifactKey: Guid(42f93a6ed838e9e42895db2dcdf72140) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Tree_04.fbx using Guid(42f93a6ed838e9e42895db2dcdf72140) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c002922fd8fbc0db8189cc396f2e109b') in 0.016755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Tree_08.fbx
+  artifactKey: Guid(d9fc2e3a51bf2314fb77fd6e4d0a851b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Tree_08.fbx using Guid(d9fc2e3a51bf2314fb77fd6e4d0a851b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c0db4caa31d7f10b5eb37b69ab21958c') in 0.030337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Crate.fbx
+  artifactKey: Guid(391f9500261103a47b3372fab9a30c10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Crate.fbx using Guid(391f9500261103a47b3372fab9a30c10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa8bdeb233cece0c41c284836fa0edde') in 0.021384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Env_Path_Cobble_02.fbx
+  artifactKey: Guid(4aefc7f113fdc674193ed6065ce7d9a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Env_Path_Cobble_02.fbx using Guid(4aefc7f113fdc674193ed6065ce7d9a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd722dbaa20efa3c8ecba035965b1d752') in 0.016587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Mini Castle.fbx
+  artifactKey: Guid(27034932e61b2ea46b6f73a681455787) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Mini Castle.fbx using Guid(27034932e61b2ea46b6f73a681455787) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5ee636530e141de6d417da510331b652') in 0.027955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 44
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Prop_Crate_02.fbx
+  artifactKey: Guid(571ca82227e33ee49bfab56388a9ff84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Prop_Crate_02.fbx using Guid(571ca82227e33ee49bfab56388a9ff84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21c1966ad0bc169dc052ab9619c34de7') in 0.017399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/GameCore/Entitys/Entity/EntityMainPlayer.cs
+  artifactKey: Guid(c3fdfbc3535dbfd419b604f578e4c357) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/GameCore/Entitys/Entity/EntityMainPlayer.cs using Guid(c3fdfbc3535dbfd419b604f578e4c357) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a29d4f1b8cfddd9b9b674b1a9891997') in 0.007541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Materials/PolyKnights_Mat_01_Dark.mat
+  artifactKey: Guid(0bd927a906edd1a4083e71be716697ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Materials/PolyKnights_Mat_01_Dark.mat using Guid(0bd927a906edd1a4083e71be716697ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '63b2bcca3b16209e22a1928614e30ab3') in 0.012994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeBirch_03.fbx
+  artifactKey: Guid(53db9fd4aca71a249bea37848ef55722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_TreeBirch_03.fbx using Guid(53db9fd4aca71a249bea37848ef55722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c4d7e7138cfc09dc7b83a7a743f8e0f') in 0.019426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Materials/Glass.mat
+  artifactKey: Guid(05410a5301abb0244923da8559c2b7a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Materials/Glass.mat using Guid(05410a5301abb0244923da8559c2b7a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdf65eb4d3a298b9e10094d5a1306e60') in 0.010948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57f8f11fea4a9f001e859986688c521d') in 0.029270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Brazier_01.fbx
+  artifactKey: Guid(6221309bb1589ae4283fb1ff86a5d7d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Models/SM_Prop_Brazier_01.fbx using Guid(6221309bb1589ae4283fb1ff86a5d7d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '59356866e5c1202a9fed4149a459b525') in 0.022159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Meshes/LowPoly - Rock B.FBX
+  artifactKey: Guid(3ecc1e70424b33546b2dc73bb30a5163) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Meshes/LowPoly - Rock B.FBX using Guid(3ecc1e70424b33546b2dc73bb30a5163) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b42075d305dc5c63fd7af98f49e4efcd') in 0.034912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/InventoryButton_gloves.png
+  artifactKey: Guid(88f4bdad502a13449abc596e59f840e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Fantasy RPG UI Sample/UI/Parts/InventoryButton_gloves.png using Guid(88f4bdad502a13449abc596e59f840e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '04d9837641680c583c0a9d33aaf64675') in 0.019927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_32.png
+  artifactKey: Guid(2b561569485d156429a42f8b103c2037) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Pixel Cursors/Cursors/Bonus_32.png using Guid(2b561569485d156429a42f8b103c2037) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e682b6e47c4e198eafbbae3be5117070') in 0.019522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp
+  artifactKey: Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp using Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ce90defb77ed159a0de1c442521b136') in 0.023910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shop_03.fbx
+  artifactKey: Guid(e09af1aa95b0d204591774e4f54dae8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shop_03.fbx using Guid(e09af1aa95b0d204591774e4f54dae8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '407241532815739d5fc2799205f6d082') in 0.017303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Flower_07.prefab
+  artifactKey: Guid(46c53497e3001f54a99bbdccd3d1a96f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Flower_07.prefab using Guid(46c53497e3001f54a99bbdccd3d1a96f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '56733136d8792564bf1d0c394c7de5e5') in 0.010252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Room_03.fbx
+  artifactKey: Guid(8e5c85a892ef3324587fae297bc38f50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Room_03.fbx using Guid(8e5c85a892ef3324587fae297bc38f50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0570e790e7c6dc61f513b9e795b4ae61') in 0.020613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Roof Of The Barn.mat
+  artifactKey: Guid(cd738d350242aba47b70e5f534c5dd3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Roof Of The Barn.mat using Guid(cd738d350242aba47b70e5f534c5dd3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f6723922302b878d2460655e2cdd1631') in 0.019637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Reeds_02.prefab
+  artifactKey: Guid(9afff6499b68a0e49a880ea03cce605f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Reeds_02.prefab using Guid(9afff6499b68a0e49a880ea03cce605f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae48b8a6971eedc50b33beaf6a12880d') in 0.009049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Wooden Plank House Wall.mat
+  artifactKey: Guid(3551ff973f30d90458e32b2a76ddcd8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Wooden Plank House Wall.mat using Guid(3551ff973f30d90458e32b2a76ddcd8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ae26544b06b3ad6886a85e9e0c4abc2') in 0.014170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Roof_05.fbx
+  artifactKey: Guid(402c06b62e597b2409088043cbf6c332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Roof_05.fbx using Guid(402c06b62e597b2409088043cbf6c332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eae843a65adaed2ac5caffefde2629f3') in 0.015869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd
+  artifactKey: Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd using Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f225312331196a1e6689c5dd87b3a00b') in 0.018945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Env_Rock_Large_06.fbx
+  artifactKey: Guid(6aa5e74ef216ba04bbd52d2d3af01796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Env_Rock_Large_06.fbx using Guid(6aa5e74ef216ba04bbd52d2d3af01796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '00122f06a274b5a4413768ed50801549') in 0.022162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Crate_Covered_01.fbx
+  artifactKey: Guid(bb26b3c513322df42ac051222efd4c7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Crate_Covered_01.fbx using Guid(bb26b3c513322df42ac051222efd4c7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f557e7cb11cad79e1fef8b0805745a5c') in 0.022521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Couldnt Hit The Side Of A Barn.mat
+  artifactKey: Guid(4df730a6ca94fef46bc95fc66fa4567e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Couldnt Hit The Side Of A Barn.mat using Guid(4df730a6ca94fef46bc95fc66fa4567e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b90f91d72171a2e38aa1e7d30d4bac25') in 0.012642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Stack_03.fbx
+  artifactKey: Guid(63176ad0735d88e4aa01cef0b00507d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Stack_03.fbx using Guid(63176ad0735d88e4aa01cef0b00507d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdfd1027b790748ad7d45ca3721c60ab') in 0.017208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Beams.mat
+  artifactKey: Guid(da5809246278d394c829c5e36cd861b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Materials/Beams.mat using Guid(da5809246278d394c829c5e36cd861b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e58b836cf351c25a9d6f0b94968c3ba0') in 0.009023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Materials/MiniCastle.mat
+  artifactKey: Guid(4769cc6c54cfc4b49b1b0b931d1a0794) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Castle/Components/Materials/MiniCastle.mat using Guid(4769cc6c54cfc4b49b1b0b931d1a0794) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '60e6ee3f7e541b457944d3b2d69daf62') in 0.013222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Water Mill.fbx
+  artifactKey: Guid(37de963107df4bf4bba21e3d3cc8ad56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Water Mill.fbx using Guid(37de963107df4bf4bba21e3d3cc8ad56) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '647ca7dcb6e9773a92cf4c40139c3e55') in 0.018736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Cart_01.fbx
+  artifactKey: Guid(c52fe9edea80cbd4b8a7edf1dfb05161) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Cart_01.fbx using Guid(c52fe9edea80cbd4b8a7edf1dfb05161) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c47085444b0084f2411e5163845f7ae1') in 0.018176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Reeds_01.prefab
+  artifactKey: Guid(e56f1fbea0219724398a7942c07f3618) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Reeds_01.prefab using Guid(e56f1fbea0219724398a7942c07f3618) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7dd267751bfd4ee905ae91c710dcf87e') in 0.011731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Skeleton_Ground_01.fbx
+  artifactKey: Guid(c96a265701dccea4797398fd3b81d91f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Skeleton_Ground_01.fbx using Guid(c96a265701dccea4797398fd3b81d91f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '32c30893bd63aaebbc462a1470e401a3') in 0.026045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Bench_01.fbx
+  artifactKey: Guid(50366bc765c0432418c8c6903a8a4f90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Bench_01.fbx using Guid(50366bc765c0432418c8c6903a8a4f90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'edb3586c4909d98fe4bd496fc54847a3') in 0.018548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Stack_01.fbx
+  artifactKey: Guid(d55652c818c6c4446a1da299a50fbf78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Prop_Stack_01.fbx using Guid(d55652c818c6c4446a1da299a50fbf78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44e8e72bb05c89de81e4dae7c9209d99') in 0.016114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Preset_Bar_01.fbx
+  artifactKey: Guid(b45f14f435512114b9de49cb4a3e8394) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_Preset_Bar_01.fbx using Guid(b45f14f435512114b9de49cb4a3e8394) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4dc12b12dee295ffff3dbf5123bd5d0d') in 0.021343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd
+  artifactKey: Guid(bfd675cc0db1d4656b75dc6d6ba91142) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/TerrainAssets/SurfaceTextures/SandAlbedo.psd using Guid(bfd675cc0db1d4656b75dc6d6ba91142) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '774bfeea1e541cf742cf28f7728d1ae1') in 0.026763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_SideAttachment_03.fbx
+  artifactKey: Guid(92bdc2fb0d9ed1c428cfd93797b9f272) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Shanty_SideAttachment_03.fbx using Guid(92bdc2fb0d9ed1c428cfd93797b9f272) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c0e7572b958d1842697b6db7769ecbd2') in 0.020117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Flower_05.fbx
+  artifactKey: Guid(d15017d5b13131648adba8fa91367264) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Models/SM_Env_Flower_05.fbx using Guid(d15017d5b13131648adba8fa91367264) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35bbb600b9e99b1c6e317ee4750cb4b4') in 0.018005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Terrain Textures/Simple Textures/DarkBlueTexture.jpg
+  artifactKey: Guid(19e4f18d7670efd46a2cc6c538aa3fdb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Terrain Textures/Simple Textures/DarkBlueTexture.jpg using Guid(19e4f18d7670efd46a2cc6c538aa3fdb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ddc4b2640d0a81adffe62f8271bf4e5b') in 0.013413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Rock_012.prefab
+  artifactKey: Guid(f469bb5d4878e0545be36504442967ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Rock_012.prefab using Guid(f469bb5d4878e0545be36504442967ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '97fef60f1be96ef179c27ce319f06c12') in 0.010946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/SM_Bld_House_Chimney_02.prefab
+  artifactKey: Guid(9798020b643705e438eaa01ca7ae48d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/SM_Bld_House_Chimney_02.prefab using Guid(9798020b643705e438eaa01ca7ae48d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7790dc45c4068fd25916bb69706064dc') in 0.010559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Campfire_Pot_01.prefab
+  artifactKey: Guid(e77bb0d531071bc4fbe1775ecc123bf9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Campfire_Pot_01.prefab using Guid(e77bb0d531071bc4fbe1775ecc123bf9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '669139d049af2d0babf780f30c54c1cc') in 0.013676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Fence_01.prefab
+  artifactKey: Guid(2e767aec4381a214f902df4ac3e94fc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Fence_01.prefab using Guid(2e767aec4381a214f902df4ac3e94fc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e3d4f4d2cd5c1713dcbfb481479c9b3d') in 0.010220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Props/SM_Prop_RoadSign_01.prefab
+  artifactKey: Guid(cf6871bb3104ec44c9b52e64356323d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Props/SM_Prop_RoadSign_01.prefab using Guid(cf6871bb3104ec44c9b52e64356323d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e139b2242f7e6b487087cebe532400b1') in 0.010734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Dock_03.prefab
+  artifactKey: Guid(db3856c56878da24fbbae53a95fa40a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Dock_03.prefab using Guid(db3856c56878da24fbbae53a95fa40a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1a12111a0a88a5c9496276885e892789') in 0.009581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Skull_01.prefab
+  artifactKey: Guid(f7a9904488fffb8458355a1532858d62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Skull_01.prefab using Guid(f7a9904488fffb8458355a1532858d62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4416edb05640efc9b2b171683249d0a6') in 0.012498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Env_Rock_02.fbx
+  artifactKey: Guid(bb0f970e82d6d1f4f89c94da8a2b7265) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Env_Rock_02.fbx using Guid(bb0f970e82d6d1f4f89c94da8a2b7265) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce5e2c0b21013b952fba3ffba179cb2e') in 0.019161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_03.prefab
+  artifactKey: Guid(3ee5a26aa7a392e4eb5055d9703e036d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_03.prefab using Guid(3ee5a26aa7a392e4eb5055d9703e036d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fda6271f8eb1f2e8fae8d0be180827d3') in 0.012923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_TreeDead_01.prefab
+  artifactKey: Guid(105f2418cc866b6439b211cb0181b50e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_TreeDead_01.prefab using Guid(105f2418cc866b6439b211cb0181b50e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c982e87755bcbc1186aab1ead78819b9') in 0.008639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Shop_01.prefab
+  artifactKey: Guid(1051d8aa107151c4e96b0eedc58c195c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Shop_01.prefab using Guid(1051d8aa107151c4e96b0eedc58c195c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bae5d6b78afcd7579cdbf441c1dddd0d') in 0.013328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Tree_04 1.prefab
+  artifactKey: Guid(4e6c196ae4d9a774e9c0a297c328bc6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Tree_04 1.prefab using Guid(4e6c196ae4d9a774e9c0a297c328bc6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e7ba1f855854b7f290c2f0d2938dd6ff') in 0.008116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Dock_02.prefab
+  artifactKey: Guid(ee6021d650a48d34eb24f35b6c268a04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Dock_02.prefab using Guid(ee6021d650a48d34eb24f35b6c268a04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b8c7e66db4450fbaf70e252ef3f44eb9') in 0.009711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_09.prefab
+  artifactKey: Guid(6aab6a688220bd24fb3ed0efc8a33722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_09.prefab using Guid(6aab6a688220bd24fb3ed0efc8a33722) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '46e589cddf41ea5943a36994dc92c7ed') in 0.011544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Props/SM_Prop_Fence_02.prefab
+  artifactKey: Guid(7360d30a05af7804195e76840febbe6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Props/SM_Prop_Fence_02.prefab using Guid(7360d30a05af7804195e76840febbe6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5199505b4f96e07150124ebaa2d93283') in 0.009083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Props/SM_Prop_CampFire_01.prefab
+  artifactKey: Guid(bddb857dccb8156419a78be08cb4b651) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Props/SM_Prop_CampFire_01.prefab using Guid(bddb857dccb8156419a78be08cb4b651) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '79f87667e7d369f512d8ca6e6d818146') in 0.011189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_04.prefab
+  artifactKey: Guid(178878bcf5455764d89195155eee7e66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_04.prefab using Guid(178878bcf5455764d89195155eee7e66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fbc6a3c779733831e5059ea15317d154') in 0.009470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Crate_Covered_01.prefab
+  artifactKey: Guid(7faac9e46c092bf43a71b66a76456b49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Crate_Covered_01.prefab using Guid(7faac9e46c092bf43a71b66a76456b49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca37f6d270702ef6e3039ba4031a2804') in 0.009233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Prop_Logs_01.fbx
+  artifactKey: Guid(10663b4d35b9d4346bec8efe8600fe01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Prop_Logs_01.fbx using Guid(10663b4d35b9d4346bec8efe8600fe01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f1728e7a2c509d2dd5d6c85b9ee855a6') in 0.025765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_06.prefab
+  artifactKey: Guid(32c513dd4f75bc24692549a1a831b5c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_06.prefab using Guid(32c513dd4f75bc24692549a1a831b5c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccce9af510964a559fff24bbb0a7fe01') in 0.011188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Rock_013.prefab
+  artifactKey: Guid(f44a0a8cf86c4624faaaa432ee3b78ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_Rock_013.prefab using Guid(f44a0a8cf86c4624faaaa432ee3b78ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8cda9514616ac201a4df92c928bd0df0') in 0.009158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_TreeBirch_02 (1).prefab
+  artifactKey: Guid(c2f58e771465d2047899e86f0fe802e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonAdventure/Prefabs/Environments/SM_Env_TreeBirch_02 (1).prefab using Guid(c2f58e771465d2047899e86f0fe802e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2506fa7e6cc3cca38d667949c721d986') in 0.010187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rocks_03.prefab
+  artifactKey: Guid(65599d67f43c9e3448b2846c4d9e8ab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rocks_03.prefab using Guid(65599d67f43c9e3448b2846c4d9e8ab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef0b0413409ad8bb49a12a977a79d4eb') in 0.008626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_05.prefab
+  artifactKey: Guid(aaf146f0b1899d54a8a5cf4be35172cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Environments/SM_Env_Rock_Large_05.prefab using Guid(aaf146f0b1899d54a8a5cf4be35172cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6ee0ff7ccbfe08ec8563234e5714632f') in 0.010857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Prop_Log_01.fbx
+  artifactKey: Guid(1cb05b5feb3a067488169b81fce505ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Models/ImportedModels/SM_Prop_Log_01.fbx using Guid(1cb05b5feb3a067488169b81fce505ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2e5a316b22f8fadd644c6245eecc941') in 0.016397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/SM_Bld_StairsLarge_02.prefab
+  artifactKey: Guid(9d512b24ffbedb841a3b360fd5f32d6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/SM_Bld_StairsLarge_02.prefab using Guid(9d512b24ffbedb841a3b360fd5f32d6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b8aafd322d24ac6a6734a603d50be53b') in 0.009293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/Stone building wood roof windows.prefab
+  artifactKey: Guid(8150ed36857ef3045900ba85e5730998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonKnights/Prefabs/Buildings/Stone building wood roof windows.prefab using Guid(8150ed36857ef3045900ba85e5730998) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b3bafcb2318f274cc41a407691a7a4b8') in 0.011070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Crate_01.prefab
+  artifactKey: Guid(874b300860c362f4e868ac3dafd9ef0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Props/SM_Prop_Crate_01.prefab using Guid(874b300860c362f4e868ac3dafd9ef0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b468f92fe4fadf901cd96bad99c60ce7') in 0.009305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Wooden Watch Tower.prefab
+  artifactKey: Guid(b6dcadcb8a931c44f9cd96f1f83c5126) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Wooden Watch Tower.prefab using Guid(b6dcadcb8a931c44f9cd96f1f83c5126) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '441c7c4231ac1b312932b40a8fd16389') in 0.007430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 10.wav
+  artifactKey: Guid(379e40c9ee994864fa1cbcd90934c6a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 10.wav using Guid(379e40c9ee994864fa1cbcd90934c6a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6128bdab222d3fa5d1bacfbb3bb19ed1') in 0.066361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scripts/UI/DamageText/DamageText.cs
+  artifactKey: Guid(7fb0a470c0a8a7443b18e96e3fa121bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/UI/DamageText/DamageText.cs using Guid(7fb0a470c0a8a7443b18e96e3fa121bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9436762538fa46f4c78927aeb22ae3ff') in 0.005271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 1.wav
+  artifactKey: Guid(94fc62564eabf2e429355affe6bee585) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 1.wav using Guid(94fc62564eabf2e429355affe6bee585) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bc4017d38a7edc25e1b26891fc7649b5') in 0.059116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset Packs/Synty - Polygon Student Sample/Prefabs/SM_Env_Water.prefab
+  artifactKey: Guid(fb4e0b01a8eccf24c9e5ca4c30a9b2be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Synty - Polygon Student Sample/Prefabs/SM_Env_Water.prefab using Guid(fb4e0b01a8eccf24c9e5ca4c30a9b2be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '573f43a8dd7bb5e62832898c596ff178') in 0.009033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Justin Timberlakes House.prefab
+  artifactKey: Guid(7efe29abea424304b851cb6c4aa947ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Justin Timberlakes House.prefab using Guid(7efe29abea424304b851cb6c4aa947ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '60fd4a1fe687706c03f286b81bec3f76') in 0.007081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.725939 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Prefabs/Props/SM_Prop_Logs_01.prefab
+  artifactKey: Guid(bcecb47ea5c6ff945a4477cf0949925a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonVikings/Prefabs/Props/SM_Prop_Logs_01.prefab using Guid(bcecb47ea5c6ff945a4477cf0949925a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fb04dab519313f95bc08c5c50e34cff7') in 0.012993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/Displace.cs
+  artifactKey: Guid(c62b7d87755b447919138e67f8e22e0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/Displace.cs using Guid(c62b7d87755b447919138e67f8e22e0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3460af955739636170bb084f90c02030') in 0.008189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd
+  artifactKey: Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd using Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3405a42680009f99b0e8b1a817d3bee3') in 0.022870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/Water/Water/Models/WaterPlane.fbx
+  artifactKey: Guid(ba6a41dc489914734857bb5924eb70ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/Water/Water/Models/WaterPlane.fbx using Guid(ba6a41dc489914734857bb5924eb70ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '937d67ca2a3e14ed4c95891f9544b724') in 0.018746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs
+  artifactKey: Guid(42e7f46d0e5a84171a3909479c1646ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs using Guid(42e7f46d0e5a84171a3909479c1646ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84bcd0afc2a41fb1870e3818aae9436e') in 0.006970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs
+  artifactKey: Guid(2a91e8dd37cdd41efb4859b65aced7a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Asset Packs/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs using Guid(2a91e8dd37cdd41efb4859b65aced7a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '93754c334c386ebfaf9ad1579eb9e3f5') in 0.007703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 18.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (74.2 KB). Loaded Objects now: 3134.
+Memory consumption went from 82.5 MB to 82.4 MB.
+Total: 8.929900 ms (FindLiveObjects: 0.283000 ms CreateObjectMapping: 0.118800 ms MarkObjects: 8.465400 ms  DeleteObjects: 0.061000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.987 seconds
+Refreshing native plugins compatible for Editor in 14.97 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.710 seconds
+Domain Reload Profiling: 2688ms
+	BeginReloadAssembly (201ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (680ms)
+		LoadAssemblies (460ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (298ms)
+			TypeCache.Refresh (292ms)
+				TypeCache.ScanAssembly (275ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1710ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (552ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 17.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2652 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (118.4 KB). Loaded Objects now: 3149.
+Memory consumption went from 123.0 MB to 122.9 MB.
+Total: 9.718200 ms (FindLiveObjects: 0.253100 ms CreateObjectMapping: 0.098400 ms MarkObjects: 9.080700 ms  DeleteObjects: 0.284200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 

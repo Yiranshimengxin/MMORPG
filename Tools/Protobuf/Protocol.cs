@@ -221,6 +221,9 @@ namespace Pb
         [global::ProtoBuf.ProtoMember(3, Name = @"money")]
         public long Money { get; set; }
 
+        [global::ProtoBuf.ProtoMember(4, Name = @"items")]
+        public global::System.Collections.Generic.List<PBItem> Items { get; } = new global::System.Collections.Generic.List<PBItem>();
+
     }
 
     [global::ProtoBuf.ProtoContract()]

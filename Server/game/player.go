@@ -18,7 +18,7 @@ func NewPlayer(id int32, db *db.User, mySql *sql.DB) *Player {
 		},
 		db:      db,
 		dbMySql: mySql,
-		//bag:&PlayerBag{},
+		bag:     &PlayerBag{},
 	}
 
 	return p
@@ -30,7 +30,7 @@ type Player struct {
 	db      *db.User
 	dirty   bool
 	dbMySql *sql.DB
-	bag     *Player
+	bag     *PlayerBag
 }
 
 // OnLogin 登录游戏
@@ -47,7 +47,7 @@ func (p *Player) OnLogin(register bool) {
 	p.Damage = 10
 	p.Defence = 5
 
-	//p.bag.load(p,register)
+	p.bag.Load(p, register)
 }
 
 // GetUid 获取玩家UID
@@ -67,6 +67,14 @@ func (p *Player) GetDB() *db.User {
 // GetType 获取类型
 func (p *Player) GetType() int32 {
 	return p.ObjType
+}
+
+func (p *Player) AddItem(itemId, num int32) {
+	p.bag.AddItem(itemId, num)
+}
+
+func (p *Player) GetBag() *PlayerBag {
+	return p.bag
 }
 
 // Update 更新
@@ -162,7 +170,7 @@ func (p *Player) Save() {
 	}
 	p.dirty = false
 
-	//p.bag.Save()
+	p.bag.Save()
 }
 
 func (p *Player) SetDirty() {

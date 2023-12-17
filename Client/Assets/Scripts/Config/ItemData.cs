@@ -22,8 +22,8 @@ public class ItemData
     {
         ItemDataRow row1 = new ItemDataRow();
         row1.Id = 1001;
-        row1.Name = "Ò©Ë®";
-        row1.Description = "ÎïÆ·Ê¹ÓÃ¿ÉÔö¼ÓÑªÁ¿10µã";
+        row1.Name = "ç»éªŒç“¶";
+        row1.Description = "ä½¿ç”¨å¢åŠ ç»éªŒå€¼ã€‚";
         row1.Icon = "Potion_01(Red)_No BG";
         row1.CanBeUsed = 1;
         row1.UseType = 1;
@@ -32,8 +32,8 @@ public class ItemData
 
         ItemDataRow row2 = new ItemDataRow();
         row2.Id = 1002;
-        row2.Name = "½ğ±Ò±¦Ïä";
-        row2.Description = "ÎïÆ·Ê¹ÓÃ¿ÉÔö¼Ó10µã½ğÇ®";
+        row2.Name = "é‡‘å¸é¥¼";
+        row2.Description = "ä½¿ç”¨åå¢åŠ é‡‘å¸ã€‚";
         row2.Icon = "Coin_Gold_02";
         row2.CanBeUsed = 1;
         row2.UseType = 2;

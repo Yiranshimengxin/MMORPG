@@ -73,6 +73,7 @@ message PBUpdateResourceNotify{
 	int64 exp = 1;
 	int32 level = 2;
 	int64 money = 3;
+	repeated PBItem items = 4;
 }
 
 message PBMoveReq {

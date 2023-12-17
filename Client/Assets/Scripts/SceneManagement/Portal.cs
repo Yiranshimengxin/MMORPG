@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using GameCore.Entitys;
+using GameCore.Entitys.Atts;
 using RPG.Control;
 using UnityEngine;
 using UnityEngine.AI;
@@ -21,7 +23,10 @@ namespace RPG.SceneManagement
         [SerializeField] float fadeInTime = 2f;
         [SerializeField] float fadeWaitTime = 0.5f;
 
-        private void OnTriggerEnter(Collider other) {
+        AttCharactor mainAttr;
+
+        private void OnTriggerEnter(Collider other)
+        {
             if (other.tag == "Player")
             {
                 StartCoroutine(Transition());
@@ -42,15 +47,17 @@ namespace RPG.SceneManagement
             //SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             playerController.enabled = false;
-            
+            mainAttr = GameCore.Entitys.EntityManager.MainPlayer.AttCharactor;
+            EntityManager.Instance.RemoveEntity(EntityManager.MainPlayer);
             yield return fader.FadeOut(fadeOutTime);
 
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
-            PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+            EntityManager.Instance.CreateEntityByAtt(eEntityType.PLAYER_MAIN, mainAttr.id, mainAttr);
+            PlayerController newPlayerController = GameCore.Entitys.EntityManager.MainPlayer.GetRootGameObject().GetComponent<PlayerController>();
             newPlayerController.enabled = false;
 
-            
+
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 

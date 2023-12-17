@@ -94,8 +94,8 @@ func (w *World) HandleMsg(c *gate.Client, session int32, name string, data []byt
 		w.OnAttack(c, session, data)
 	case "PBMoveReq":
 		w.OnMove(c, session, data)
-	//case "PBUseItemReq":
-	//	w.OnUseItem(c, session, data)
+	case "PBUseItemReq":
+		w.OnUseItem(c, session, data)
 	case "PBSyncPositionReq":
 		w.OnSyncPosition(c, session, data)
 	default:
@@ -156,12 +156,12 @@ func (w *World) OnLogin(c *gate.Client, session int32, data []byte) {
 				fmt.Println(err.Error())
 				return
 			}
-			//插入背包数据
-			//_, err = w.dbMySql.Exec("insert into bag(uid,data) values (?,?)", dbUser.Uid, []byte{})
-			//if err != nil {
-			//	fmt.Println(err.Error())
-			//	return
-			//}
+			// 插入背包数据
+			_, err = w.dbMySql.Exec("insert into user_bag(uid,data) values (?,?)", dbUser.Uid, []byte{})
+			if err != nil {
+				fmt.Println(err.Error())
+				return
+			}
 			register = true
 		}
 	}
@@ -176,12 +176,12 @@ func (w *World) OnLogin(c *gate.Client, session int32, data []byte) {
 	rsp.Uid = dbUser.Uid
 	rsp.Name = req.GetAccount()
 	rsp.Money = p.GetDB().Money
-	//for k,v:=range p.GetBag().GetItem(){
-	//	rsp.Items=append(rsp.Items,&pb.PBItem{
-	//		ItemId: k,
-	//		Count: v,
-	//	})
-	//}
+	for k, v := range p.GetBag().GetItems() {
+		rsp.Items = append(rsp.Items, &pb.PBItem{
+			ItemId: k,
+			Count:  v,
+		})
+	}
 
 	c.Send("PBLoginRsp", session, rsp)
 }
@@ -293,11 +293,16 @@ func (w *World) OnAttack(c *gate.Client, session int32, data []byte) {
 
 			c.GetPlayer().AddExp(10)
 			c.GetPlayer().AddMoney(10)
+			c.GetPlayer().AddItem(1001, 1)
 			update := &pb.PBUpdateResourceNotify{
 				Exp:   c.GetPlayer().GetDB().Exp,
 				Money: c.GetPlayer().GetDB().Money,
 				Level: c.GetPlayer().GetDB().Level,
 			}
+			update.Items = append(update.Items, &pb.PBItem{
+				ItemId: 1001,
+				Count:  c.GetPlayer().GetBag().GetItemNum(1001),
+			})
 			c.Send("PBUpdateResourceNotify", 0, update)
 
 			notify := &pb.PBObjectDieNotify{}
@@ -305,4 +310,22 @@ func (w *World) OnAttack(c *gate.Client, session int32, data []byte) {
 			w.Broadcast("PBObjectDieNotify", notify, 0)
 		}
 	})
+}
+
+func (w *World) OnUseItem(c *gate.Client, session int32, data []byte) {
+	req := &pb.PBUseItemReq{}
+	err := proto.Unmarshal(data, req)
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+
+	c.GetPlayer().GetBag().OnItemUsed(req.GetItemId(), req.GetCount())
+
+	rsp := &pb.PBUseItemRsp{}
+	rsp.Items = append(rsp.Items, &pb.PBItem{
+		ItemId: req.GetItemId(),
+		Count:  c.GetPlayer().GetBag().GetItemNum(req.GetItemId()),
+	})
+	c.Send("PBUseItemRsp", session, rsp)
 }

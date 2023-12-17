@@ -1,5 +1,5 @@
 
-¯
+Ñ
 protocol.protopb"T
 PBNetMsg
 proto (	Rproto
@@ -46,11 +46,13 @@ PBLoginRsp
 AttackedObjId (RAttackedObjId
 damage (Rdamage")
 PBObjectDieNotify
-objId (RobjId"V
+objId (RobjId"x
 PBUpdateResourceNotify
 exp (Rexp
 level (Rlevel
-money (Rmoney"{
+money (Rmoney 
+items (2
+.pb.PBItemRitems"{
 	PBMoveReq
 	positionX (R	positionX
 	positionY (R	positionY
